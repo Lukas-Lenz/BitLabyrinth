@@ -1,0 +1,6 @@
+@BitLabyrinth_HostAddress = http://localhost:5005
+
+GET {{BitLabyrinth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

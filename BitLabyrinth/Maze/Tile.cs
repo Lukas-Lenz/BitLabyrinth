@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BitLabyrinth.Maze
 {
-    enum TileType
+    internal enum TileType
     {
         NONE,
         START,
@@ -22,7 +22,7 @@ namespace BitLabyrinth.Maze
         {
             Type = type;
 
-            IsPassable = (     type == TileType.START
+            IsPassable = (type == TileType.START
                             || type == TileType.GOAL
                             || type == TileType.FREE);
         }

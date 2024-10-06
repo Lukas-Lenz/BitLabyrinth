@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
 
 namespace BitLabyrinth.Maze
@@ -29,7 +29,7 @@ namespace BitLabyrinth.Maze
 
         internal bool IsGoal(int[] coordinates)
         {
-            if(coordinates.Length != 2) return false;
+            if (coordinates.Length != 2) return false;
 
             return (coordinates[0] == GoalPosition.Item1 && coordinates[1] == GoalPosition.Item2);
         }

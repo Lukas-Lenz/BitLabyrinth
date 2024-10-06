@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace BitLabyrinth.Maze.Solvers
 {
-
     internal class RandomMS : MazeSolver
     {
         public RandomMS(Map map)
@@ -35,7 +34,7 @@ namespace BitLabyrinth.Maze.Solvers
             var currentPosition = PartialPath.Last();
 
             int counter = 0;
-            while(!Maze.IsGoal(currentPosition) && counter < cutoff)
+            while (!Maze.IsGoal(currentPosition) && counter < cutoff)
             {
                 Step();
                 currentPosition = PartialPath.Last();
@@ -55,7 +54,7 @@ namespace BitLabyrinth.Maze.Solvers
             var rand = new Random();
 
             int[] currentPosition = [0, 0];
-            
+
             currentPosition[0] = PartialPath.Last().Item1;
             currentPosition[1] = PartialPath.Last().Item2;
 
@@ -82,7 +81,7 @@ namespace BitLabyrinth.Maze.Solvers
                         //Console.WriteLine("Next x Step: " + currentPosition[0] + modifier + " is greater than row count: " + Maze.Tiles.Count());
                         continue;
                     }
-                
+
                 // y gets greater than column length
                 if (index == 1)
                     if (currentPosition[1] + modifier >= Maze.Tiles[currentPosition[0]].Count())
@@ -104,7 +103,7 @@ namespace BitLabyrinth.Maze.Solvers
                     //Console.WriteLine("Next Position not passable");
                     continue;
                 }
-                    
+
                 Tuple<int, int> tup = new(nextPosition[0], nextPosition[1]);
                 //Console.WriteLine("Adding to path: " + tup);
                 PartialPath.AddStep(tup);
@@ -119,7 +118,7 @@ namespace BitLabyrinth.Maze.Solvers
         {
             MazePath steps = new();
 
-            for(int i = 0; i < numSteps; i++)
+            for (int i = 0; i < numSteps; i++)
                 steps.AddStep(Step());
 
             return steps;

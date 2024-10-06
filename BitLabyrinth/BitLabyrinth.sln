@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.11.35208.52
+VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitLabyrinth", "BitLabyrinth.csproj", "{7952A60A-88F5-4F42-AAD7-1822CD1502F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitLabyrinth", "BitLabyrinth.csproj", "{51D21248-CA47-4220-A4BC-75A56FE6A5B2}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "bitlabreact", "..\bitlabreact\bitlabreact.esproj", "{791ECE7A-1DD5-4A97-B542-35BCA64E3840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +13,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7952A60A-88F5-4F42-AAD7-1822CD1502F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7952A60A-88F5-4F42-AAD7-1822CD1502F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7952A60A-88F5-4F42-AAD7-1822CD1502F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7952A60A-88F5-4F42-AAD7-1822CD1502F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D21248-CA47-4220-A4BC-75A56FE6A5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D21248-CA47-4220-A4BC-75A56FE6A5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D21248-CA47-4220-A4BC-75A56FE6A5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D21248-CA47-4220-A4BC-75A56FE6A5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791ECE7A-1DD5-4A97-B542-35BCA64E3840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791ECE7A-1DD5-4A97-B542-35BCA64E3840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791ECE7A-1DD5-4A97-B542-35BCA64E3840}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{791ECE7A-1DD5-4A97-B542-35BCA64E3840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791ECE7A-1DD5-4A97-B542-35BCA64E3840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791ECE7A-1DD5-4A97-B542-35BCA64E3840}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {870E542C-A1C2-44AF-8E62-FC129E81D2C2}
+		SolutionGuid = {542BD58B-100C-44F4-BD79-27DE4AF6CDC2}
 	EndGlobalSection
 EndGlobal
